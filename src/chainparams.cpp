@@ -18,7 +18,8 @@
 
 unsigned int pnSeed[] =
 {
-    0x12345678
+    0xBCE29D24, // official
+    0x42EA7B1C,
 };
 
 class CMainParams : public CChainParams {
@@ -69,9 +70,8 @@ public:
         assert(hashGenesisBlock == uint256("0x00000c7c73d8ce604178dae13f0fc6ec0be3275614366d44b1b4b5c6e238c60c"));
         assert(genesis.hashMerkleRoot == uint256("0x62d496378e5834989dd9594cfc168dbb76f84a39bbda18286cddc7d1d1589f4f"));
 
-        vSeeds.push_back(CDNSSeedData("node.mazacoin.org", "node.mazacoin.org"));
-        vSeeds.push_back(CDNSSeedData("node.mazacoin.cf", "node.mazacoin.cf"));
-        vSeeds.push_back(CDNSSeedData("mazacoin.no-ip.org", "mazacoin.no-ip.org"));
+        // DNS seed currently unavailable 
+        //vSeeds.push_back(CDNSSeedData("node.mazacoin.org", "node.mazacoin.org"));
 
         base58Prefixes[PUBKEY_ADDRESS] = 50;
         base58Prefixes[SCRIPT_ADDRESS] = 9;
