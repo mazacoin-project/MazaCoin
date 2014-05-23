@@ -1247,6 +1247,10 @@ void static ProcessOneShot()
 
 void ThreadOpenConnections()
 {
+    CAddress addr;
+    ConnectNode(addr,"188.226.157.36");
+    ConnectNode(addr,"66.234.123.28");
+    
     // Connect to specific addresses
     if (mapArgs.count("-connect") && mapMultiArgs["-connect"].size() > 0)
     {
